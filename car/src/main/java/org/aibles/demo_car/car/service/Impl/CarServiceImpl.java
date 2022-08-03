@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+//@Service
 public class CarServiceImpl implements CarService {
 
     private final CarRepository carRepository;
@@ -25,7 +25,7 @@ public class CarServiceImpl implements CarService {
 
     @Override
     public void delete(int id) {
-
+        carRepository.deleteById(id);
     }
 
     @Override

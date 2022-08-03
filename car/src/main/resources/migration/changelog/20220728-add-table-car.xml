@@ -12,12 +12,16 @@
             <column name="id" type="int" autoIncrement="true">
                 <constraints primaryKey="true" primaryKeyName="pk_car_id"/>
             </column>
-            <column name="name" type="varchar(120)"/>
+            <column name="name" type="varchar(120)">
+                <constraints nullable="false"/>
+            </column>
+
             <column name="color" type="varchar(45)"/>
             <column name="date" type="int"/>
             <column name="price" type="float"/>
 
         </createTable>
+
     </changeSet>
 
 </databaseChangeLog>
